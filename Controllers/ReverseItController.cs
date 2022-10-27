@@ -28,7 +28,7 @@ public class ReverseItController : ControllerBase
         {
             while(num > 0)
             {
-                // The program will take the number the user entered and try to find the remainder
+                // The program will take the number the user entered and try to find the remainder, which will be used to figure out the reverse order
                 int remainder = num % 10;
                 reverseNum = (reverseNum * 10) + remainder; 
                 num = num / 10;
