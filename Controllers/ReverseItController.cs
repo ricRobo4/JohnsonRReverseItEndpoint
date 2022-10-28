@@ -2,6 +2,9 @@
 // 10-26-22
 // This API will take the user's input through the URL, and convert it to an int. It will then do some math to figure out the reverse order of the numbers, and print out the reverse order for the user to see.
 
+// Peer Review: Samuel Laguna: The code ran like intended. The inputs worked amd the terminal displayed the input in reverse.
+//This code is all good no problems.
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace JohnsonRReverseItEndpoint.Controllers;
@@ -30,7 +33,7 @@ public class ReverseItController : ControllerBase
             {
                 // The program will take the number the user entered and try to find the remainder, which will be used to figure out the reverse order
                 int remainder = num % 10;
-                reverseNum = (reverseNum * 10) + remainder; 
+                reverseNum = (reverseNum * 10) + remainder;
                 num = num / 10;
             }
         }
